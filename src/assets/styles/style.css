@@ -2,6 +2,7 @@
   position: relative;
   height: 100vh;
   width: 100%;
+  background: #f3f3f3;
 }
 
 .c-box {
@@ -27,6 +28,7 @@
   flex-flow: column;
   justify-content: flex-end;
   height: 192px;
+  padding: 0 0.5rem;
 }
 
 .p-chat__bubble {
