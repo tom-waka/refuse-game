@@ -28,7 +28,7 @@
   flex-flow: column;
   justify-content: flex-end;
   height: 192px;
-  padding: 0 0.5rem;
+  margin: 0 0.5rem;
 }
 
 .p-chat__bubble {
