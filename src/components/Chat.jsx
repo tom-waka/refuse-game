@@ -4,22 +4,34 @@ import ListItemAvatar from '@material-ui/core/ListItemAvatar';
 import Avatar from '@material-ui/core/Avatar';
 import NoPrfile from '../assets//img/noprofile.png';
 import Icon from '../assets/img/eigyokun.png';
+import { makeStyles, createStyles } from '@material-ui/core/styles';
 
 
 const Chat = (props) => {
   const isQuestion = (props.type === 'question');
-  const classes = isQuestion ? 'p-chat__row' : 'p-chat__reverse';
+  const chatType = isQuestion ? 'p-chat__row' : 'p-chat__reverse';
+  const bubbleColor = isQuestion ? 'bubble__question' : 'bubble__answer';
+
+  const useStyles = makeStyles(() => (
+    createStyles( {
+      "avatar": {
+        border: '1px solid'
+      }
+    })
+  ));
+
+  const classes = useStyles();
 
   return (
-    <ListItem className={classes}>
-      <ListItemAvatar>
+    <ListItem className={chatType}>
+      <ListItemAvatar >
         {isQuestion ? (
-          <Avatar alt="icon" src={Icon} />
+          <Avatar alt="icon" src={Icon} className={classes.avatar} />
         ): (
-          <Avatar alt="icon" src={NoPrfile} />
+          <Avatar alt="icon" src={NoPrfile} className={classes.avatar} />
         )}
       </ListItemAvatar>
-      <div className="p-chat__bubble">{props.text}</div>
+      <div className={bubbleColor}>{props.text}</div>
     </ListItem>
   )
 }
