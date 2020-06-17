@@ -6,7 +6,7 @@
           {"content": "学習コミュニティについて知りたい", "nextId": "community"},
           {"content": "お付き合いしたい", "nextId": "dating"}
       ],
-      "question": "こんにちは！とむへのご用件はなんでしょうか？"
+      "question": "こんにちは！トムへのご用件はなんでしょうか？"
   },
   "job_offer": {
       "answers": [
