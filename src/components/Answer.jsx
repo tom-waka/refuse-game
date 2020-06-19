@@ -9,7 +9,7 @@ const useStyles = makeStyles(() => (
       backgroundColor: '#fff',
       color: '#1eb30d',  
       fontWeight: 600,
-      marginBottom: '8px',
+      margin: '16px 0',
       boxShadow: '1px 1px 1px rgba(0,0,0,0.4)'
     }
   })

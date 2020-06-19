@@ -3,7 +3,7 @@ import ListItem from '@material-ui/core/ListItem';
 import ListItemAvatar from '@material-ui/core/ListItemAvatar';
 import Avatar from '@material-ui/core/Avatar';
 import NoPrfile from '../assets//img/noprofile.png';
-import Icon from '../assets/img/eigyokun.png';
+import Icon from '../assets/img/merry.png';
 import { makeStyles, createStyles } from '@material-ui/core/styles';
 
 
