@@ -27,7 +27,7 @@ const App = () => {
           text: selectedAnswer,
           type: 'answer'
         })
-        setTimeout(() => displayNextQuestion(nextQuestionId, dataset[nextQuestionId]), 800);
+        setTimeout(() => displayNextQuestion(nextQuestionId, dataset[nextQuestionId]), 1000);
         break;
     }
   }
